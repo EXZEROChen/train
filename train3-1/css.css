@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+#container {
+    width: 100%;
+    min-height: 100%; 
+    margin: auto;
+}
+#header {
+    height: 120px;
+    text-align: center;
+    background-color: midnightblue;
+    padding-top: 20px;
+}
+#header h1 {
+    vertical-align: middle;
+    margin: 0;
+    color: white;
+    font-size: 60px; 
+}
+#header .logo{
+    vertical-align: middle;
+}
+#main {
+    display:table;
+    height: 100%;
+    background-color:aliceblue ;
+}
+#left {
+    display:inline-block;
+    vertical-align: top;
+    width:25%;
+    height: 100%;
+    background-color: aliceblue;
+}
+#left ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#left ul>li:not(:last-child){
+    border-bottom:1px solid steelblue;
+}
+#left ul>li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#left ul>li a:hover{
+    background-color: #69c0ff;
+    padding: 12px;
+    color: white;
+}
+#right {
+    display:inline-block;
+    width: 75%;
+    background-color: white;
+}
+#right table{
+    font-size: 25px;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.banner{
+    display: inline-block;
+    width: 100%;
+    text-align: center; 
+    padding-bottom: 20px;
+
+}
+#footer {
+    text-align: center;
+    padding: 8px;
+    background-color:midnightblue;
+    color: white;
+
+}
+.center{
+    text-align: center;
+}
+.price::before {
+    content: '¥';
+}
+.img{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    height: 200px;
+    cursor: pointer;  
+    transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
+}
+.img:hover {
+    transform: scale(1.5); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
+}
+.name{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.content{
+    font-size: 20px;
+    text-indent: 2em;
+}
+.text{
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+.text::first-letter {
+    font-size: 40px;
+    color:indianred
+}
